@@ -4,18 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7861c591-593a-4fab-a6cb-b508ff9f2bf9" name="Changes" comment="" />
+    <list default="true" id="7861c591-593a-4fab-a6cb-b508ff9f2bf9" name="Changes" comment="HomeWork4">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomeWork4/pages/CheckoutInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeWork4/pages/CheckoutInfoPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomeWork4/pages/ProductsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeWork4/pages/ProductsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomeWork4/pages/YourCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeWork4/pages/YourCartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomeWork4/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeWork4/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomeWork4/tests/CheckoutInfoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeWork4/tests/CheckoutInfoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomeWork4/tests/CheckoutOverviewTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeWork4/tests/CheckoutOverviewTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomeWork4/tests/ProductTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeWork4/tests/ProductTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/HomeWork4/tests/YourCardTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/HomeWork4/tests/YourCardTests.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2fgXBA9FO7BxY1G426jMPcHovGC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -26,10 +50,129 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.CheckoutInfoTests.CheckoutInfoTest.executor": "Run",
+    "TestNG.CheckoutInfoTests.executor": "Run",
+    "TestNG.CheckoutOverviewTests.CheckoutOverviewTest.executor": "Run",
+    "TestNG.LoginTests.executor": "Run",
+    "TestNG.LoginTests.positiveLoginTest.executor": "Debug",
+    "TestNG.ProductTests.addTOCartProductTest.executor": "Run",
+    "TestNG.ProductTests.addToCartProductTest.executor": "Run",
+    "TestNG.ProductTests.executor": "Run",
+    "TestNG.YourCardTests.YourCardTest.executor": "Run",
+    "git-widget-placeholder": "HomeWork4",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.3402299"
   }
 }]]></component>
+  <component name="RunManager" selected="TestNG.CheckoutInfoTests">
+    <configuration name="CheckoutInfoTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemo_QA26_Khotetovskiy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomeWork4.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HomeWork4.tests" />
+      <option name="MAIN_CLASS_NAME" value="HomeWork4.tests.CheckoutInfoTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckoutOverviewTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemo_QA26_Khotetovskiy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomeWork4.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HomeWork4.tests" />
+      <option name="MAIN_CLASS_NAME" value="HomeWork4.tests.CheckoutOverviewTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckoutOverviewTests.CheckoutOverviewTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemo_QA26_Khotetovskiy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomeWork4.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HomeWork4.tests" />
+      <option name="MAIN_CLASS_NAME" value="HomeWork4.tests.CheckoutOverviewTests" />
+      <option name="METHOD_NAME" value="CheckoutOverviewTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemo_QA26_Khotetovskiy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomeWork4.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HomeWork4.tests" />
+      <option name="MAIN_CLASS_NAME" value="HomeWork4.tests.ProductTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductTests.addToCartProductTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SauceDemo_QA26_Khotetovskiy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomeWork4.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HomeWork4.tests" />
+      <option name="MAIN_CLASS_NAME" value="HomeWork4.tests.ProductTests" />
+      <option name="METHOD_NAME" value="addToCartProductTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.CheckoutInfoTests" />
+        <item itemvalue="TestNG.ProductTests.addToCartProductTest" />
+        <item itemvalue="TestNG.ProductTests" />
+        <item itemvalue="TestNG.CheckoutOverviewTests.CheckoutOverviewTest" />
+        <item itemvalue="TestNG.CheckoutOverviewTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,6 +182,42 @@
       <option name="presentableId" value="Default" />
       <updated>1714223559154</updated>
     </task>
+    <task id="LOCAL-00001" summary="HomeWork4">
+      <option name="closed" value="true" />
+      <created>1715677891169</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715677891169</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HomeWork4" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="HomeWork4" />
+    <option name="LAST_COMMIT_MESSAGE" value="HomeWork4" />
   </component>
 </project>

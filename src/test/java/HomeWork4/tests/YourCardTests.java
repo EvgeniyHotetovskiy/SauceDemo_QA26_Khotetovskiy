@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class YourCardTests extends BaseTest {
     @Test
-    public void YourCardTest ()  {
+    public void yourCardTest ()  {
         String productName = "Sauce Labs Onesie";
         String productName2 = "Sauce Labs Backpack";
         loginPage.login("standard_user", "secret_sauce");

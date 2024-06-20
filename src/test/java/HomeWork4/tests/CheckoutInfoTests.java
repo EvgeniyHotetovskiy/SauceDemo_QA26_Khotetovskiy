@@ -17,6 +17,6 @@ public class CheckoutInfoTests extends BaseTest {
         Assert.assertTrue(checkoutInfo.isLastNameDisplayed());
         Assert.assertTrue(checkoutInfo.isZipCodeDisplayed());
         checkoutInfo.setYourInformation("Jonh", "Smith", "222160");
-        Assert.assertEquals(checkoutOverviewPage.getCheckoutOverview(), "Checkout: Overview");
+        Assert.assertEquals(checkoutOverviewPage.getPageTitle(), "Checkout: Overview");
     }
 }

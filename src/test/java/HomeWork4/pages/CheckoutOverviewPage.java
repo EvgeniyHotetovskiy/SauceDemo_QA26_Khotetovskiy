@@ -12,7 +12,7 @@ public class CheckoutOverviewPage extends BasePage{
     public CheckoutOverviewPage(WebDriver driver) {
         super(driver);
     }
-    public String getCheckoutOverview () {
+    public String getPageTitle() {
         return driver.findElement(CHECKOUT_OVERVIEW).getText();
     }
     public String getTotalPrice () {

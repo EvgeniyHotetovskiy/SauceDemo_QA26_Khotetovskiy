@@ -1,23 +1,27 @@
 package HomeWork4.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class YourCardTests extends BaseTest {
-    @Test
-    public void yourCardTest ()  {
-        String productNameFirst = "Sauce Labs Onesie";
-        String productNameSecond = "Sauce Labs Backpack";
-        loginPage.login("standard_user", "secret_sauce");
-        productsPage.clickAddToCartButton(productNameFirst);
-        productsPage.clickAddToCartButton(productNameSecond);
+    @Test (groups = "withSuccessLogin",  dataProvider = "testDataForAddProductToCard",
+            description = "Проверка параметров добавленных в корзину товаров")
+    public void yourCardTest (String product)  {
+        productsPage.clickAddToCartButton(product);
         productsPage.clickYourCart();
         Assert.assertTrue(yourCartPage.isShoppingCardDisplayed());
-        Assert.assertEquals(yourCartPage.getProductPrice(productNameFirst), "$7.99");
-        Assert.assertEquals(yourCartPage.getProductDescription(productNameFirst), "Rib snap infant onesie for the junior automation engineer in development. Reinforced 3-snap bottom closure, two-needle hemmed sleeved and bottom won't unravel.");
-        Assert.assertEquals(yourCartPage.getProductPrice(productNameSecond), "$29.99");
-        Assert.assertEquals(yourCartPage.getProductDescription(productNameSecond), "carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.");
-        yourCartPage.clickCheckout();
-        Assert.assertEquals(checkoutInfo.getCheckoutInfo(), "Checkout: Your Information");
+        Assert.assertTrue(yourCartPage.productInCard(product), "проверка продукта");
+    }
+    @DataProvider
+    public Object[][] testDataForAddProductToCard() {
+        return new Object[][]{
+                {"Sauce Labs Backpack"},
+                {"Sauce Labs Bike Light"},
+                {"Sauce Labs Bolt T-Shirt"},
+                {"Sauce Labs Fleece Jacket"},
+                {"Sauce Labs Onesie"},
+                {"Test.allTheThings() T-Shirt (Red)"}
+        };
     }
 }

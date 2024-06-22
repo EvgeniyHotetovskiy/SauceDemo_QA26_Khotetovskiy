@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class YourCartPage extends BasePage {
 
     public YourCartPage(WebDriver driver) {
@@ -15,6 +17,7 @@ public class YourCartPage extends BasePage {
     private final static String ITEM_CONTAINER = "//div[text()='%s']/ancestor::div[@class='cart_item_label']";
     private final static By ITEM_PRICE = By.className("inventory_item_price");
     private final static By ITEM_DESCRIPTION = By.className("inventory_item_desc");
+    private final By ALL_ITEM = By.className("inventory_item_name");
 
     public boolean isShoppingCardDisplayed() {
         return driver.findElement(QTY).isDisplayed();
@@ -34,5 +37,15 @@ public class YourCartPage extends BasePage {
 
     private WebElement getProductCardByName(String productName) {
         return driver.findElement(By.xpath(String.format(ITEM_CONTAINER, productName)));
+    }
+    public boolean productInCard(String productName) {
+        List<WebElement> webElementList = driver.findElements(ALL_ITEM);
+        boolean flag = false;
+        for (WebElement i : webElementList) {
+            if (i.getText().equals(productName)) {
+                flag= true;
+            }
+        }
+        return flag;
     }
 }

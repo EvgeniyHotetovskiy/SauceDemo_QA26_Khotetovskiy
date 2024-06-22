@@ -7,6 +7,7 @@ public class LoginPage extends BasePage {
     private static final By EMAIL_INPUT = By.id("user-name");
     private static final By PASSWORD_INPUT = By.id("password");
     private static final By LOGIN_BUTTON = By.id("login-button");
+    private final By ERROR_MESSAGE = By.cssSelector("h3[data-test=error]");
     public LoginPage(WebDriver driver) {
         super(driver);
     }
@@ -29,4 +30,12 @@ public class LoginPage extends BasePage {
         setPasswordValue(password);
         clickLoginButton();
     }
+    public boolean isDisplayMessageError() {
+        return driver.findElement(ERROR_MESSAGE).isDisplayed();
+    }
+
+    public String getErrorText() {
+        return driver.findElement(ERROR_MESSAGE).getText();
+    }
+
 }

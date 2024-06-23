@@ -4,11 +4,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CheckoutOverviewTests extends BaseTest{
-    @Test
+    @Test(groups = "withSuccessLogin",
+            description = "Проверка полной стоимости продукта, таксы + успешная покупка")
     public void checkoutOverviewTest ()  {
         String productName = "Sauce Labs Onesie";
         String productName2 = "Sauce Labs Backpack";
-        loginPage.login("standard_user", "secret_sauce");
         productsPage.clickAddToCartButton(productName);
         productsPage.clickAddToCartButton(productName2);
         productsPage.clickYourCart();

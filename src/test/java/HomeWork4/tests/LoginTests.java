@@ -5,12 +5,14 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class LoginTests extends BaseTest {
-    @Test (description = "Успешная авторизация в приложении")
+    @Test (groups = "regression",
+            description = "Успешная авторизация в приложении")
     public void positiveLoginTest(){
         loginPage.login("standard_user", "secret_sauce");
         Assert.assertTrue(productsPage.isShoppingCardDisplayed());
     }
-    @Test(dataProvider = "Негативные тестовые данные для логина",
+    @Test(groups = "regression",
+            dataProvider = "Негативные тестовые данные для логина",
             description = "Негативный тест на авторизацию и проверка сообщения об ошибке")
     public void negativeLoginTest(String email, String password, String errorMessage) {
         loginPage.login(email, password);

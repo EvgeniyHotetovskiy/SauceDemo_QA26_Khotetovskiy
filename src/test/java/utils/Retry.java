@@ -1,4 +1,4 @@
-package HomeWork4.tests;
+package utils;
 
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;

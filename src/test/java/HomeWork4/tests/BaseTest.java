@@ -4,6 +4,8 @@ import HomeWork4.pages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.*;
+import utils.TestListener;
+import utils.DriverFactory;
 
 import java.time.Duration;
 @Listeners(TestListener.class)
@@ -18,8 +20,9 @@ public class BaseTest {
 
 
     @BeforeClass(alwaysRun = true)
-    public void setUp() {
-        this.driver = new ChromeDriver();
+    @Parameters({"browserName"})
+    public void setUp(@Optional("chrome") String browser) throws Exception {
+        driver = DriverFactory.getDriver(browser);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         this.loginPage = new LoginPage(driver);

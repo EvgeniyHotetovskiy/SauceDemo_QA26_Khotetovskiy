@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class CheckoutOverviewTests extends BaseTest{
-    @Test(groups = "withSuccessLogin",
+    @Test(groups = "smoke",
             description = "Проверка полной стоимости продукта, таксы + успешная покупка")
     public void checkoutOverviewTest ()  {
         String productName = "Sauce Labs Onesie";

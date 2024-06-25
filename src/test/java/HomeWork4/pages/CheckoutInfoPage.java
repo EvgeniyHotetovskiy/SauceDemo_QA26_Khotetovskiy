@@ -1,5 +1,6 @@
 package HomeWork4.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -41,15 +42,17 @@ public class CheckoutInfoPage extends BasePage {
         clickContinueButton();
     }
 
+    @Step ("Проверка отображения поля имени")
     public boolean isFirstNameDisplayed() {
         return driver.findElement(FIRST_NAME).isDisplayed();
-
     }
 
+    @Step ("Проверка отображения поля фамилии")
     public boolean isLastNameDisplayed() {
         return driver.findElement(LAST_NAME).isDisplayed();
     }
 
+    @Step ("Проверка отображения поля почтового кода")
     public boolean isZipCodeDisplayed() {
         return driver.findElement(ZIP_CODE).isDisplayed();
     }

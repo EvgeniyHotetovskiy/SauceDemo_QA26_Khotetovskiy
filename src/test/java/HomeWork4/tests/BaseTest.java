@@ -3,12 +3,14 @@ package HomeWork4.tests;
 import HomeWork4.pages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.ITestContext;
 import org.testng.annotations.*;
+import utils.InvokedListener;
 import utils.TestListener;
 import utils.DriverFactory;
 
 import java.time.Duration;
-@Listeners(TestListener.class)
+@Listeners({InvokedListener.class, TestListener.class})
 public class BaseTest {
     protected WebDriver driver;
     protected LoginPage loginPage;
@@ -21,7 +23,7 @@ public class BaseTest {
 
     @BeforeClass(alwaysRun = true)
     @Parameters({"browserName"})
-    public void setUp(@Optional("chrome") String browser) throws Exception {
+    public void setUp(@Optional("chrome") String browser, ITestContext testContext) throws Exception {
         driver = DriverFactory.getDriver(browser);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));

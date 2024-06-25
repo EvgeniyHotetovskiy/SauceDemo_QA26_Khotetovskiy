@@ -5,7 +5,8 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class YourCardTests extends BaseTest {
-    @Test (groups = "smoke",  dataProvider = "testDataForAddProductToCard",
+    @Test (groups = {"smoke", "withSuccessLogin"},
+            dataProvider = "testDataForAddProductToCard",
             description = "Проверка параметров добавленных в корзину товаров")
     public void yourCardTest (String product)  {
         productsPage.clickAddToCartButton(product);

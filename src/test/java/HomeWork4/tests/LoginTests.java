@@ -5,10 +5,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class LoginTests extends BaseTest {
-    @Test (groups = "regression",
+    @Test (groups = {"regression", "withSuccessLogin"},
             description = "Успешная авторизация в приложении")
     public void positiveLoginTest(){
-        loginPage.login("standard_user", "secret_sauce");
         Assert.assertTrue(productsPage.isShoppingCardDisplayed());
     }
     @Test(groups = "regression",

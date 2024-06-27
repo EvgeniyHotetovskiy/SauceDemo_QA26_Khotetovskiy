@@ -4,7 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class ProductTests extends BaseTest  {
-    @Test (groups = "withSuccessLogin",
+    @Test (groups = {"regression", "withSuccessLogin"},
             description = "Проверка добавления покупки в корзину")
     public void addToCartProductTest ()  {
         String productName = "Sauce Labs Onesie";

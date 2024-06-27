@@ -1,5 +1,6 @@
 package HomeWork4.pages;
 
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,14 +20,17 @@ public class YourCartPage extends BasePage {
     private final static By ITEM_DESCRIPTION = By.className("inventory_item_desc");
     private final By ALL_ITEM = By.className("inventory_item_name");
 
+    @Step("Проверка отображения корзины с товарами")
     public boolean isShoppingCardDisplayed() {
         return driver.findElement(QTY).isDisplayed();
     }
 
+    @Step("Нажать на кнопку 'Checkout'")
     public void clickCheckout() {
         driver.findElement(CHECKOUT).click();
     }
 
+    @Step("Проверка отображения корзины с покупками")
     public String getProductPrice(String productName) {
         return this.getProductCardByName(productName).findElement(ITEM_PRICE).getText();
     }
@@ -38,6 +42,8 @@ public class YourCartPage extends BasePage {
     private WebElement getProductCardByName(String productName) {
         return driver.findElement(By.xpath(String.format(ITEM_CONTAINER, productName)));
     }
+
+    @Step("Проверка отображения списка товаров на странице")
     public boolean productInCard(String productName) {
         List<WebElement> webElementList = driver.findElements(ALL_ITEM);
         boolean flag = false;

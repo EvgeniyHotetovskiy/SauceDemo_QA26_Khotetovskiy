@@ -1,4 +1,4 @@
-package HomeWork4.tests;
+package utils;
 
 import org.testng.ITestListener;
 import org.testng.ITestResult;
